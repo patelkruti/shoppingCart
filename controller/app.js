@@ -13,5 +13,8 @@ app.config(function ($routeProvider, $locationProvider) {
 	})
 	.when('/aboutUs', {
 		templateUrl: 'view/aboutUs.html'
+	})
+	.otherwise({
+		redirectTo: '/'
 	});
 });
