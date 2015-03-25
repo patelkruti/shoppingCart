@@ -6,7 +6,7 @@ app.controller('IncludeNavHeaderCtrl', function($scope, $http) {
 app.controller('IncludeFooterCtrl', function($scope) {
     $scope.fileUrl = 'view/footer.html';
 });
-app.config(['$locationProvider', '$routeProvider', function ($routeProvider, $locationProvider) {
+app.config(function ($routeProvider, $locationProvider) {
 	$routeProvider.when('/home', {
 		templateUrl : 'view/home.html',
 		controller : "homePageCtrl"
@@ -17,4 +17,4 @@ app.config(['$locationProvider', '$routeProvider', function ($routeProvider, $lo
 	.otherwise({
 		redirectTo: '/home'
 	});
-}]);
+});
