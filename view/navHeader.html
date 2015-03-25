@@ -1,0 +1,84 @@
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+
+			<button type="button" class="navbar-toggle" ng-init="navCollapsed=true" ng-click="navCollapsed=!navCollapsed">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">MYSHOPPE.COM</a>
+		</div>
+	
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+	  
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="index.html#/aboutUs">About Us</a></li>
+				<li><a href="index.html#/aboutUs">Contact Us</a></li>
+			  
+				<li class="dropdown" dropdown>
+					<a href="#" dropdown-toggle class="dropdown-toggle" data-toggle="dropdown">More... <b class="caret"></b></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="index.html#/aboutUs">Category</a></li>
+						<li><a href="index.html#/aboutUs">Product</a></li>
+						<li><a href="index.html#/aboutUs">Cart</a></li>
+						<li><a href="index.html#/aboutUs">Checkout</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html#/aboutUs">Sign up</a></li>
+				<li><a href="index.html#/aboutUs">Log in</a></li>
+				<li class="dropdown" dropdown style="display:none;">
+					<a href="#" class="dropdown-toggle" dropdown-toggle data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+<div class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
+				<!-- hiding logo in small and x-small devices -->
+				<img src="http://placehold.it/263x83" width="100%" height="83px"/>
+			</div>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<div class="row">
+					<div class="col-xs-8 col-sm-8 col-md-6 col-lg-6 inputText">
+						<input type="text" class="form-control" />
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 inputBtn">
+						<button type="submit" ng-click="myData.doClick(item, $event)"class="btn btn-default">Search</button>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+						<a href="javascript:void(0);" class="smallCart">
+							<span class="glyphicon glyphicon-shopping-cart"></span>
+							Your Bag: $0.00
+							<span class="caret"></span>
+						</a>
+					</div>
+				</div>
+				<div class="row offerBanners">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+						<a href="javascript:void(0);">Free Shipping</a>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+						<a href="javascript:void(0);">EXTRA 20% OFF</a>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+						<a href="javascript:void(0);">Clearance</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
