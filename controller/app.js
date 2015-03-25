@@ -17,4 +17,8 @@ app.config(function ($routeProvider, $locationProvider) {
 	.otherwise({
 		redirectTo: '/home'
 	});
+	$locationProvider.html5Mode({
+		enabled : true,
+		requireBase : false
+	}); 
 });
