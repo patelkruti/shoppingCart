@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="shoppingCartApp">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Welcome to MyShoppe!</title>
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+		<link rel="stylesheet/less" href="view/css/header.less" />
+
+		<script src="angular.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
+		<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js"></script>
+		<script src="controller/app.js"></script>
+		<script src="controller/controller.js"></script>
+
+	</head>
+
+	<body>
+  
+		<div ng-controller="IncludeNavHeaderCtrl" ng-include="fileUrl"></div>
+		<div ng-view></div>
+		<div ng-controller="IncludeFooterCtrl" ng-include="fileUrl"></div>
+    
+	</body>
+</html>
