@@ -1,0 +1,103 @@
+<div class="container">
+	<div class="row">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">SHOP BY CATEGORY</h3>
+				</div>
+				<div class="panel-body">New Arrivals</div>
+				<div class="panel-body">Most Popular</div>
+				<div class="panel-body">Coming Soon</div>
+				<div class="panel-body">Category : TODO</div>
+				<div class="panel-body">Category : TODO</div>
+				<div class="panel-body">Category : TODO</div>
+				<div class="panel-body">Category : TODO</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">BROWSE BY</h3>
+				</div>
+				<div class="panel-body">Sub Category : TODO</div>
+				<div class="panel-body">Sub Category : TODO</div>
+				<div class="panel-body">Sub Category : TODO</div>
+				<div class="panel-body">Sub Category : TODO</div>
+			</div>
+			<div class="panel panel-default specialOffers">
+				<div class="panel-body text-center">
+					<h3>FREE GIFT</h3>
+					<p>When you spend $20 or more.</p>
+				</div>
+			</div>
+			<div class="panel panel-default specialOffers">
+				<div class="panel-body text-center">
+					<h3>JOIN APP</h3>
+					<p>Get $10 off your first purchase</p>
+				</div>
+			</div>
+			<div class="panel panel-default specialOffers">
+				<div class="panel-body text-center">
+					<h3>GET REWARDS</h3>
+					<p>For each $ you spend !</p>
+					<div class="text-right"><a href="javascript:void(0)">Learn How</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="jumbotron">
+						<h1><a href="javascript:void(0)">Find Deal Of the WEEK !!</a></h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div ng-controller="CarouselDemoCtrl">
+						<div>
+							<carousel interval="myInterval">
+								<slide ng-repeat="slide in slides" active="slide.active">
+									<img ng-src="{{slide.image}}" style="margin:auto;">
+								</slide>
+							</carousel>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both;">&nbsp;</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="jumbotron">
+						<h1><a href="javascript:void(0)">Browse New Collection</a></h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 productDiv" ng-repeat="product in productData">
+					<div class="thumbnail" style="padding-top:20px;">
+						<img alt="post image" src={{product.productImage}}>
+						<div class="caption">
+							<h3>{{product.productTitle}}</h3>
+							<p>{{product.productDetail}}</p>
+							
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+									<p class="lead">{{product.productPrice | currency}}</p>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+									<a href="#" class="btn btn-success btn-block">Add to cart</a>
+								</div>
+							</div>
+						</div> 
+						<!--END CAPTION -->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div>
+					<pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true"></pagination>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
