@@ -8,7 +8,7 @@ app.controller('IncludeFooterCtrl', function($scope) {
 });
 app.config(function ($routeProvider, $locationProvider) {
 	$routeProvider.when('/shoppingCart/home', {
-		templateUrl : 'shoppingCart/view/home.html',
+		templateUrl : 'view/home.html',
 		controller : "homePageCtrl"
 	})
 	.when('/shoppingCart/aboutUs', {
