@@ -7,11 +7,11 @@ app.controller('IncludeFooterCtrl', function($scope) {
     $scope.fileUrl = 'view/footer.html';
 });
 app.config(function ($routeProvider, $locationProvider) {
-	$routeProvider.when('/home', {
+	$routeProvider.when('/shoppingCart/home', {
 		templateUrl : 'shoppingCart/view/home.html',
 		controller : "homePageCtrl"
 	})
-	.when('/aboutUs', {
+	.when('/shoppingCart/aboutUs', {
 		templateUrl: 'view/aboutUs.html'
 	})
 	.otherwise({
