@@ -15,7 +15,7 @@ app.config(function ($routeProvider, $locationProvider) {
 		templateUrl: 'view/aboutUs.html'
 	})
 	.otherwise({
-		redirectTo: '/home'
+		redirectTo: '/shoppingCart/home'
 	});
 	$locationProvider.html5Mode({
 		enabled : true,
