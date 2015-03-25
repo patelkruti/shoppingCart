@@ -7,7 +7,7 @@ app.controller('IncludeFooterCtrl', function($scope) {
     $scope.fileUrl = 'view/footer.html';
 });
 app.config(function ($routeProvider, $locationProvider) {
-	$routeProvider.when('/', {
+	$routeProvider.when('/home', {
 		templateUrl : 'view/home.html',
 		controller : "homePageCtrl"
 	})
@@ -15,6 +15,6 @@ app.config(function ($routeProvider, $locationProvider) {
 		templateUrl: 'view/aboutUs.html'
 	})
 	.otherwise({
-		redirectTo: '/'
+		redirectTo: '/home'
 	});
 });
